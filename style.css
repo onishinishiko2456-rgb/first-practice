@@ -1,0 +1,93 @@
+.menu{
+    position:fixed;
+    top:30px;
+    left:50px;
+    transform: translateX(-200%);
+    transition:transform 0.3s;
+}
+
+.menu.open{
+    transform:translateX(0);
+    z-index:40;
+}
+
+.parent{
+    position:fixed;
+    inset:0;
+    background: rgba(0, 0, 0,0.8);
+    opacity:0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.parent.open{
+    pointer-events: auto;
+    opacity:1;
+    z-index:30;
+}
+
+.header{
+    transition: opacity 0.3s;
+}
+
+.header.open{
+    background: rgba(0, 0, 0,0.8);
+    opacity:1;
+}
+
+.btn-stick.open{
+    background-color:white;
+}
+
+.stick-one.open{
+    transform:rotate(-45deg) translate(0, 5px);
+}
+
+.stick-two.open{
+    transform:rotate(45deg) translate(0, -5px);
+}
+
+.graph{
+    border-bottom:1px solid rgb(220, 219, 219);
+    height:60px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    .grid-cols-4{
+        grid-template-columns:1fr 1fr;
+    }
+
+    footer > div > div{
+        flex-wrap:wrap;
+    }
+
+    .items-container{
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+
+    .item-image{
+        width:100%;
+        padding-bottom: 30px;
+    }
+
+    .items-content div{
+        width:100%;
+    }
+
+    .dictionary{
+        grid-template-columns:1fr;
+    }
+
+    dt.graph{
+        border-bottom:0px;
+        height:30px;
+        margin-top:10px;
+    }
+
+    .graph{
+        height:50px;
+    }
+}

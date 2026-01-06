@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Design</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-[Noto-Sans-JP] text-[#333333] relative min-h-screen">
+    <header class="w-full max-h-[80px] h-full fixed top-0 z-50 bg-white">
+        <div class="header absolute inset-0 bg-black/70 opacity-0 pointer-events-none"></div>
+        <div class="mx-auto max-w-[1360px] px-[40px] h-full items-center flex justify-between relative z-40">   
+            <div class="min-w-[180px] w-[180px]">
+                <a href="index.html" class="transition-all duration-500 hover:opacity-70 min-w-[180px] w-[180px]">
+                    <img src="https://code-jump.com/demo/html/store2/img/logo.svg" class="z-40 text-[rgb(51, 51, 51)] min-w-[180px] w-[180px]">
+                </a>
+            </div>
+            <nav class="px-[50px] py-[36px] w-[300px]">
+                <ul class="menu">
+                    <li class="mb-[14px] w-[200px] h-[20px]"><a href="products.html" class="links font-normal text-sm text-white transition-all duration-500 hover:opacity-70">PRODUCTS</a></li>
+                    <li class="mb-[14px] w-[200px] h-[20px]"><a href="about.html" class="links font-normal text-sm text-white transition-all duration-500 hover:opacity-70">ABOUT</a></li>
+                    <li class="mb-[14px] w-[200px] h-[20px]"><a href="company.html" class="links font-normal text-sm text-white transition-all duration-500 hover:opacity-70">COMPANY</a></li>
+                    <li class="mb-[14px] w-[200px] h-[20px]"><a href="mailto:info@example.com" class="links font-normal text-sm text-white transition-all duration-500 hover:opacity-70">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="w-[30px] h-[30px] flex relative btn z-50 cursor-pointer">
+                <span class="btn-stick stick-one w-full h-[2px] bg-black absolute top-[10.5px] transition-all duration-500"></span>
+                <span class="btn-stick stick-two w-full h-[2px] bg-black absolute top-[17.5px] transition-all duration-500"></span>
+            </div>
+        </div> 
+    </header>
+
+    <main class="pt-[80px] mx-auto max-w-[1360px] px-[40px] pb-40">
+        <div class="w-full flex items-center h-[82px]">
+            <h3 class="text-sm">プロダクトタイトル</h3>
+        </div>
+        <div class="max-w-[800px]">
+            <div class="w-full grid grid-cols-[400px_1fr] gap-x-[50px] items-container min-w-0">
+                <div class="aspect-square min-w-0">
+                    <img src="https://code-jump.com/demo/html/store2/img/item1.jpg" class="w-full item-image"> 
+                </div>
+                <div class="items-content min-w-0">
+                    <div class="w-full mb-6.5">
+                        <h3 class="text-sm">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+                    </div>
+                    <div class="w-full mb-6.5">
+                        <h3 class="text-sm">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+                    </div>
+                    <div class="w-full mb-6.5">
+                        <p class="text-xs">¥99,999 +tax</p>
+                    </div>
+                    <div class="w-full grid grid-cols-[100px_1fr]">
+                        <p class="text-sm inline-block">SIZE：</p>
+                        <p class="text-sm inline-block">W999 × D999 × H999</p>
+                        <p class="text-sm inline-block">COLOR：</p>
+                        <p class="text-sm inline-block">テキスト</p>
+                        <p class="text-sm inline-block">MATERIAL：</p>
+                        <p class="text-sm inline-block">テキストテキストテキスト</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center items-center mt-15">
+            <a class="text-sm transition-all duration-500 hover:opacity-70" href="products.html">Back To Products</a>
+        </div>
+    </main>
+
+    <footer class="absolute bottom-8 w-full">
+        <div class="max-w-[1380px] mx-auto px-[40px]">
+            <div class="w-full h-full flex justify-between items-center overflow-hidden">
+                <div class="h-full flex justify-between items-center min-w-[240px] max-w-[240px]">
+                    <a href="https://www.instagram.com/" class="text-xs transition-all duration-500 hover:opacity-70">INSTAGRAM</a>
+                    <a href="https://twitter.com/" class="text-xs transition-all duration-500 hover:opacity-70">TWITTER</a>
+                    <a href="https://www.facebook.com/" class="text-xs transition-all duration-500 hover:opacity-70">FACEBOOK</a>
+                </div>
+                <div class="">
+                    <p class="text-xs">© Furniture Design</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="parent"></div>
+    <script src="script.js"></script>
+</body>
+</html>
